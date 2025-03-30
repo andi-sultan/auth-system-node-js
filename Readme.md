@@ -32,7 +32,7 @@ A secure authentication system featuring user registration, login, email verific
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/andi-sultan/auth-system.git
+git clone https://github.com/andi-sultan/auth-system-node-js.git
 cd auth-system
 ```
 
