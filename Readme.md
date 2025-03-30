@@ -1,4 +1,3 @@
-```markdown
 # Authentication System with Node.js, PostgreSQL, and Passport.js
 
 A secure authentication system featuring user registration, login, email verification, and password reset functionality.
