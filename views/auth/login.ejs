@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+  <style>
+    .alert {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+
+    .alert-error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+
+    .alert-success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Login</h1>
+
+  <% if (error && error.length> 0) { %>
+  <div class="alert alert-error">
+    <%= error %>
+  </div>
+  <% } %>
+
+  <% if (success && success.length> 0) { %>
+  <div class="alert alert-success">
+    <%= success %>
+  </div>
+  <% } %>
+
+  <form action="/login" method="POST">
+    <div>
+      <label>Email:</label>
+      <input type="email" name="email" required />
+    </div>
+    <div>
+      <label>Password:</label>
+      <input type="password" name="password" required />
+    </div>
+    <button type="submit">Login</button>
+  </form>
+  <p>Don't have an account? <a href="/register">Register</a></p>
+  <p>Forgot your password? <a href="/forgot-password">Reset it</a></p>
+</body>
+
+</html>
